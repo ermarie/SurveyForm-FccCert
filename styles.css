@@ -1,20 +1,53 @@
+label {
+    color: gray;
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+
+#form-box{
+   background-color:cornflowerblue;
+    padding: 40px;
+    position: absolute;
+    top:20px;
+    left:20px;
+    right: 20px;
+    bottom:20px;
+    margin: auto;
+}
+
+
+#survey-form {
+    background-color:antiquewhite;
+    width: 500px;
+}
+
 .dropbtn {
     background-color:aliceblue;
     padding: 10px;
     font-size: 15px;
     border:none;
+
 }
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color:  gray;
-    min-width: 150px;
+    background-color: darkgray;
+    min-width: 50px;
     z-index: 1;
 }
 
@@ -25,8 +58,9 @@
 }
 
 .dropdown-content p:hover {
-    background-color: darkgray;
+    background-color: gray;
     color: white;
+    cursor: pointer
 }
 
 .dropdown:hover .dropdown-content {
@@ -35,4 +69,33 @@
 
 .dropdown:hover .dropbtn {
     background-color: aqua;
+}
+
+.radio-input {
+    display: inline-block;
+}
+
+input:invalid {
+    border: 1px dashed red
+}
+
+input:valid {
+    border: 1px solid black;
+}
+
+#gender-label{
+    display: inline-block;
+}
+
+#checkbox-input {
+    display: block;
+}
+
+#checkbox-label {
+    display: inline-block;
+}
+
+#name:hover #email:hover #number:hover {
+    background-color:gray;
+    cursor: pointer;
 }
