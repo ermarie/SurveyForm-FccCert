@@ -6,24 +6,63 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="form-box">
     <h1  id="title">Survey Form</h1>
-    <p id="description">This is a description of a form.</p>
-    <form id="survey-form">
-        <div class="dropdown">
-            <button class="dropbtn">Prefix</button>
-            <div class="dropdown-content">
-                <p>Mr.</p>
-                <p>Mrs.</p>
-                <p>Miss</p>
-                <p>Ms.</p>
+        <p id="description">This is a description of a form.</p>
+        <form id="survey-form">
+            <div class="dropdown">
+                <button class="dropbtn">Prefix</button>
+                <div class="dropdown-content">
+                    <p>Mr.</p>
+                    <p>Mrs.</p>
+                    <p>Miss</p>
+                    <p>Ms.</p>
+                </div>
             </div>
-        </div>
-        <label id="name-label">Name:</label>
-        <input type="text" id="name" placeholder="Name">
-        <label id="email-label">Email:</label>
-        <input type="text" id="email" placeholder="Email">
-        <label id="number label">Phone Number:</label>
-        <input type="number" id="number" placeholder="Phone Number">
-    </form>
+            <div id="input">
+                <div id="label">
+                    <label id="name-label">Name:</label>
+                    <input type="text" id="name" placeholder="Enter Your Name" required>
+                </div>
+                 <div id="label">
+                    <label id="email-label">Email:</label>
+                    <input type="text" id="email" placeholder="Enter Your Email" required pattern="[0-9a-zA-Z]*[@][0-9a-zA-Z]*[.][a-z]{2,}?">
+                </div> 
+            </div>
+            <div id="radio-input">
+                <div>
+                    <input type="radio" name="gender" class="radio-input" value="female">
+                    <label id="female-label" class="gender-label">Female</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" class="radio-input" value="male">
+                    <label id="male-label" class="gender-label">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" class="radio-input" value="other">
+                    <label id="other-label" class="gender-label">Other</label>
+                    </div>
+            </div>
+            <div id="input">
+                <div id="label">
+                <label id="number-label">Years of Experience:</label>
+                <input type="number" id="number" placeholder="Enter Years Experience" min="1" max="76" required>
+            </div>
+            </div>
+            <div id="checkbox-input">
+                <div>
+                    <label id="" class="checkbox-label">Placeholder</label>
+                    <input type="checkbox" name="" class="checkbox-input" value="placeholder">
+                </div>
+                <div>
+                    <label id="" class="checkbox-label">Placeholder</label>
+                    <input type="checkbox" name="" class="checkbox-input" value="placeholder">
+                </div><div>
+                    <label id="" class="checkbox-label">Placeholder</label>
+                    <input type="checkbox" name="" class="checkbox-input" value="placeholder">
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
